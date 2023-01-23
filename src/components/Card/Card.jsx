@@ -52,7 +52,12 @@ function CompactCard({ param, setExpanded }) {
 
 // Expanded Card
 function ExpandedCard({ param, setExpanded }) {
+
+
   const data = {
+    /**
+   * @type {ApexCharts.ApexOptions}
+   */
     options: {
       chart: {
         type: "area",
@@ -103,6 +108,7 @@ function ExpandedCard({ param, setExpanded }) {
     },
   };
 
+
   return (
     <motion.div
       className="ExpandedCard"
@@ -115,7 +121,7 @@ function ExpandedCard({ param, setExpanded }) {
       <div style={{ alignSelf: "flex-end", cursor: "pointer", color: "white" }}>
         <UilTimes onClick={setExpanded} />
       </div>
-        <span>{param.title}</span>
+      <span>{param.title}</span>
       <div className="chartContainer">
         <Chart options={data.options} series={param.series} type="area" />
       </div>
