@@ -4,8 +4,7 @@ import {
   UilClipboardAlt,
   UilUsersAlt,
   UilPackage,
-  UilChart,
-  UilSignOutAlt,
+  UilChart
 } from "@iconscout/react-unicons";
 
 // Analytics Cards imports
